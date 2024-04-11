@@ -30,9 +30,9 @@ body {
 
 .formatting {
   padding: 5px;
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-family: "Lucida Handwriting", "Brush Script MT", cursive;
-  /* border: 1px solid black; */
+  text-shadow: 2px 2px 8px black;
 }
 
 .off_center {
