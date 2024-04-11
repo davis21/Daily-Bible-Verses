@@ -152,11 +152,6 @@ body {
 }
 
 @media (min-width: 1920px) {
-  .layer1,
-  .layer2 {
-    height: 100%;
-    margin-top: 175px;
-  }
   .formatting {
     padding: 5px;
     font-size: 2em;
