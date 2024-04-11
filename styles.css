@@ -156,7 +156,7 @@ body {
 
   .parallax-container {
     position: fixed; /* Or `absolute` depending on desired effect */
-    top: 0;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
