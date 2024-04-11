@@ -89,10 +89,14 @@ body {
   /* Styles for your content */
 }
 
-@media (min-width: 300px) {
-  .layer1,
-  .layer2 {
-    height: 100%;
+@media (min-width: 300px) and (max-width: 999px) {
+  .parallax-container {
+    position: fixed; /* Or `absolute` depending on desired effect */
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
   }
   .formatting {
     padding: 5px;
@@ -109,28 +113,32 @@ body {
     /* Add width, height, etc., as necessary */
   }
 }
-@media (min-width: 800px) {
-  .layer1,
-  .layer2 {
-    height: 100%;
-  }
+@media (min-width: 1000px) and (max-width: 1499px) {
   .formatting {
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-family: "Lucida Handwriting", "Brush Script MT", cursive;
     text-shadow: 2px 2px 8px black;
   }
 
   .off_center {
     position: absolute;
-    top: 40%; /* Adjust as necessary */
+    top: 30%; /* Adjust as necessary */
     left: 35%; /* Increase to move right, decrease to move left */
     transform: translate(-50%, -50%); /* Adjust for true centering if needed */
     /* Add width, height, etc., as necessary */
   }
+  .parallax-container {
+    position: fixed; /* Or `absolute` depending on desired effect */
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1500px) {
   .formatting {
     padding: 5px;
     font-size: 2em;
@@ -144,5 +152,14 @@ body {
     left: 35%; /* Increase to move right, decrease to move left */
     transform: translate(-50%, -50%); /* Adjust for true centering if needed */
     /* Add width, height, etc., as necessary */
+  }
+
+  .parallax-container {
+    position: fixed; /* Or `absolute` depending on desired effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
   }
 }
