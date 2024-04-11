@@ -107,6 +107,10 @@ body {
   }
 }
 @media (min-width: 800px) {
+  .layer1,
+  .layer2 {
+    height: 100%;
+  }
   .formatting {
     padding: 5px;
     font-size: 1em;
@@ -121,6 +125,10 @@ body {
 }
 
 @media (min-width: 1000px) {
+  .layer1,
+  .layer2 {
+    height: 100%;
+  }
   .formatting {
     padding: 5px;
     font-size: 1.75em;
@@ -138,6 +146,10 @@ body {
 }
 
 @media (min-width: 1920px) {
+  .layer1,
+  .layer2 {
+    height: 100%;
+  }
   .formatting {
     padding: 5px;
     font-size: 2em;
