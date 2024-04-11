@@ -28,6 +28,21 @@ body {
   align-items: center;
 }
 
+.formatting {
+  padding: 5px;
+  font-size: 1.25em;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  /* border: 1px solid black; */
+}
+
+.off_center {
+  position: absolute;
+  top: 30%; /* Adjust as necessary */
+  left: 35%; /* Increase to move right, decrease to move left */
+  transform: translate(-50%, -50%); /* Adjust for true centering if needed */
+  /* Add width, height, etc., as necessary */
+}
+
 .parallax-container {
   position: fixed; /* Or `absolute` depending on desired effect */
   top: 0;
