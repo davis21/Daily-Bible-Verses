@@ -1,0 +1,105 @@
+body {
+  background-image: url(Images/BG.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--black);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 725px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 50%;
+  height: 30%;
+}
+
+.rmiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formatting {
+  padding: 5px;
+  font-size: 1.25em;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  /* border: 1px solid black; */
+}
+
+.off_center {
+  position: absolute;
+  top: 30%; /* Adjust as necessary */
+  left: 35%; /* Increase to move right, decrease to move left */
+  transform: translate(-50%, -50%); /* Adjust for true centering if needed */
+  /* Add width, height, etc., as necessary */
+}
+
+.parallax-container {
+  position: fixed; /* Or `absolute` depending on desired effect */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-repeat: repeat-x;
+}
+
+.layer1 {
+  background-image: url(Images/Cloud\ 1.png);
+  z-index: 10;
+  animation: scrollright 780s linear infinite;
+}
+
+.layer2 {
+  background-image: url(Images/Cloud\ 2.png);
+  margin-top: 175px;
+  z-index: 20;
+  animation: scrollright 540s linear infinite;
+}
+
+.layer3 {
+  z-index: 30;
+}
+
+.front {
+  position: fixed; /* Fixed positioning makes the element stay in the same place even when the page scrolls */
+  bottom: 0; /* Anchors the image to the bottom */
+  right: 0; /* Aligns the image to the right; change to `left: 0;` if you prefer it on the left */
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Keeps the image aspect ratio intact */
+  z-index: 1000; /* Ensures the image stays on top of other content; adjust the value as needed */
+}
+
+.in_front {
+  z-index: 40;
+}
+
+@keyframes scrollright {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0; /* Adjust based on actual image width */
+  }
+}
+
+.content {
+  position: relative;
+  /* Styles for your content */
+}
